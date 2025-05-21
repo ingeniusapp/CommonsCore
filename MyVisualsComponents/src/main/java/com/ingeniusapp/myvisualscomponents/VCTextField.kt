@@ -23,7 +23,8 @@ data class VCTextFieldModel(val text: String)
 @Preview(showSystemUi = true, showBackground = true, device = Devices.PIXEL_4)
 @Composable
 fun VCTextFieldPreview() {
+   val vcTextFieldModel = VCTextFieldModel("")
     Box(modifier = Modifier.fillMaxSize()) {
-        VCTextField()
+        VCTextField(vcTextFieldModel)
     }
 }
